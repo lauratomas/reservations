@@ -28,11 +28,11 @@ begin
   Thank you,
   @department_name@"
 
-  Settings.overdue_checkout_email_body ||= "Dear @user@,
-  You have missed a scheduled equipment checkout, so your equipment may be released and checked out to other students.
-
-  Thank you,
-  @department_name@"
+  # Settings.overdue_checkout_email_body ||= "Dear @user@,
+  # You have missed a scheduled equipment checkout, so your equipment may be released and checked out to other students.
+  # 
+  # Thank you,
+  # @department_name@"
 
   Settings.overdue_checkin_email_body ||= "Dear @user@,
   You were supposed to return the equipment you borrowed from us on @return_date@ but because you have failed to do so, you will be charged @late_fee@ / day until the equipment is returned. Failure to return equipment will result in replacement fees and revocation of borrowing privileges.

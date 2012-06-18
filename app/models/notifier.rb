@@ -16,13 +16,13 @@ class Notifier < ActionMailer::Base
     body       :reservation => reservation
   end
   
-  def overdue_checkout_notification(reservation)
-    recipients reservation.reserver.email
-    cc         Settings.admin_email
-    from       "no-reply@reservations.app"
-    subject    "[Reservation] OVERDUE: equipment checkout"
-    body       :reservation => reservation
-  end
+  # def overdue_checkout_notification(reservation)
+  #   recipients reservation.reserver.email
+  #   cc         Settings.admin_email
+  #   from       "no-reply@reservations.app"
+  #   subject    "[Reservation] OVERDUE: equipment checkout"
+  #   body       :reservation => reservation
+  # end
   
   def overdue_checkin_notification(reservation)
     recipients reservation.reserver.email
